@@ -5,18 +5,53 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- stylesheets, using mdl for css framework-->
-	<link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue-light_blue.min.css" />
-    <!-- javascript mdl -->
+	<link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-lime.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- javascript + mdl --> 
+    
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 </head>
+<header>
+  <img src="mychecklist.png" alt="my checklist">
+</header>
+<!--
 <body>
 <!-- the container (webpage)-->
 	<div class="container">
-		<h1>Your To-Do List</h1>
 		<div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
   		<div class="mdl-tabs__tab-bar">
       <a href="#task" class="mdl-tabs__tab is-active">Task</a>
       <a href="#todo" class="mdl-tabs__tab">To-Do</a>
       <a href="#finished" class="mdl-tabs__tab">Finished</a>
   </div>
+
+  <!-- adding tab -->
+  <div class="mdl-tabs__panel is-active" id="adding">
+    <div class="mdl-textfield mdl-js-textfield">
+  <input class="mdl-textfield__input" type="text" id="task">
+    </div>
+
+<!-- adding button-->
+  <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored">
+<i class="material-icons">add</i>
+</button>
+
+<!-- to do tab -->
+</div>
+<div class="mdl-tabs__panel" id="todo">
+  <ul id="not-done">
+  </ul>
+</div>
+
+<!-- finished tab -->
+<div class="mdl-tabs__panel" id="finished">
+  <ul id="done" class="mdl-list">
+  </li>
+  </ul>
+</div>
+</div>
+  </div>
+ <script src="app.js"></script>
+</body>	
+</html> 

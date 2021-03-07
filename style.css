@@ -1,0 +1,26 @@
+header img {
+  width: 100%;
+  height: auto;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+div {
+  display: block;
+  width: 400px;
+  margin: auto;
+}
+#done span {
+  text-decoration: line-through;
+  font-size: 1.2em !important;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
